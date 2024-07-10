@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>OpenWeatherMap</title>
+  </head>
+  <body>
+<div class="sections">
+      <section class="form">
+      <div class="container">
+        <h1 class="title">Quel temps fait-il à ... ?</h1>
+        <form id="form-search-city">
+          <label for="city"></label>
+          <input
+            type="text"
+            id="city"
+            name="city"
+            placeholder="Saisissez le nom d'une ville"
+          />
+          <p class="search-message"></p>
+          <br /><br />
+
+          <button type="submit">Voir les infos</button>
+        </form>
+      </div><br><br>
+      <div class="container">
+        <h1 class="title">Ajouter une ville à votre liste de suivie</h1>
+        <form id="form-add-city">
+          <label for="add-city"></label>
+          <input
+            type="text"
+            id="add-city"
+            name="add-city"
+            placeholder="Ajoutez une ville"
+          />
+          <p class="add-message"></p>
+          <br /><br />
+
+          <button type="submit">Ajouter</button>
+        </form>
+      </div>
+    </section>
+    <section class="informations">
+      <div class="meteo-infos">
+        
+      </div>
+    </section>
+</div>
+
+
+    <div class="watch-list">
+      <h2>
+        Liste des villes suivies
+      </h2>
+      <div class="watch-list-container">
+
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
