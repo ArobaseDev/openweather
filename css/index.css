@@ -1,29 +1,125 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f2f5;
-  /* display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center; */
+  align-items: flex-start;
   height: 100vh;
   width: 100vw;
- /* padding: 9rem; */
+  margin: 0;
 }
 
-.block-content {
+.sections {
   display: flex;
+  flex-direction: row;
   width: 100%;
-
+  flex-wrap: nowrap;
+  height: auto;
+}
+section {
+  padding: 2rem;
+}
+section.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 40%;
+  text-align: center;
+  height: auto;
+  background-color: #0056b3;
+  color: #ffffff;
 }
 
+section.informations {
+  width: 60%;
+  height: auto;
+  background-color: #333333cb;
+  color: whitesmoke;
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.meteo-infos {
+  margin: 0.1rem;
+  padding: 2rem;
+  color: rgb(242, 255, 0);
+  
+  & >h2 {
+    margin: 1rem;
+    font-size: 4rem;
+   
+  }
+  & >p {
+    color: rgb(0, 217, 255);
+    margin: 0.5rem;
+    font-size: 2rem;
+  }
+}
+
+.watch-list {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  & > h2{
+    text-align: center;
+  }
+}
+
+.city-in-list {
+  margin: 1rem;
+  padding: 0.1rem;
+  background-color: rgba(98, 98, 114, 0.315);
+  border: solid 0.1rem rgb(111, 44, 44);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+   box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.504);
+  &:hover{
+    background-color:rgba(83, 83, 117, 0.315);
+     box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.504);
+  }
+}
+
+.city-in-list span {
+  padding: 1.1rem 2rem;
+  width: auto;
+  margin: 0 2rem;
+  &:hover{
+    cursor: pointer;
+    color: #401212;
+    font-weight: 900;
+  }
+}
+
+.city-in-list button {
+  cursor: pointer;
+  background-color: rgba(146, 16, 16, 0.919);
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  color: rgb(242, 242, 249);
+  border-radius: 0.5rem;
+  border: rgba(197, 117, 117, 0.973);
+  border: solid 0.1rem rgba(232, 223, 223, 0.973);
+  &:hover {
+    background-color: rgba(67, 2, 2, 0.973);
+    color: rgb(157, 157, 144);
+    box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.504);
+  }
+}
 
 form {
   background-color: #ffffff;
-  background-color: red;
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
-  width: 95%;
+  width: 100%;
   box-sizing: border-box;
 }
 
@@ -69,17 +165,19 @@ form button:hover {
 
 h1.title {
   margin: 1rem;
+}
+
+.success {
+  background-color: green;
   text-align: center;
-  display: block;
+  padding: 2rem;
+  margin: 0 1rem;
+  color: white;
 }
-
-.answer-container {
-  width: 100%;
-  background-color: #0056b3;
-  height:40rem ;
-  margin: 5rem;
+.error {
+  background-color: red;
+  text-align: center;
+  padding: 2rem;
+  margin: 0 1rem;
+  color: white;
 }
-
-
-
-
